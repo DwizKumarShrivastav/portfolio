@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dwiz Kumar Shrivastav — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<div class="grid-overlay"></div>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-brand" href="#">
+    <div class="nav-brand-icon">DK</div>
+    <div class="nav-brand-text">Dwiz Kumar Shrivastav<span>Full-Stack &amp; AI Developer</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+  <a class="nav-cta"
+   href="assets/DWIZ_SHRIVASTAV_RESUME.pdf"
+   download="Dwiz_Kumar_Shrivastav_Resume.pdf">
+
+    <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+    </svg>
+
+    Download CV
+</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">I build scalable AI-powered systems</p>
+
+    <div class="hero-rating">
+      <div class="rating-avatars">
+        <div class="avatar-ring">A</div>
+        <div class="avatar-ring">B</div>
+        <div class="avatar-ring">C</div>
+      </div>
+      <div>
+        <div class="rating-num">10+ <span style="font-size:11px;color:var(--green)">★★★★★</span></div>
+        <div class="rating-label">Technologies mastered</div>
+      </div>
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="name-first">FULL-STACK</span>
+      <span class="name-last">DEVELOPER</span>
+    </h1>
+    <p class="hero-desc">
+      IT undergraduate from Greater Noida building production-grade applications — LLM chatbots, ML anomaly detection, and scalable REST platforms. Published researcher. Agile builder.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-green" href="#projects">
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12l4 4 4-4"/></svg>
+        View Projects
+      </a>
+      <a class="btn-ghost" href="#contact">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-bg"></div>
+      <!-- Stylized SVG silhouette -->
+      <!-- <svg class="hero-silhouette" viewBox="0 0 320 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Body silhouette -->
+        <ellipse cx="160" cy="90" rx="52" ry="58" fill="#2a2a2a"/>
+        <path d="M60 540 C60 400 90 340 160 320 C230 340 260 400 260 540Z" fill="#222"/>
+        <path d="M80 360 C50 380 30 430 20 540H300C290 430 270 380 240 360C220 350 200 345 160 345C120 345 100 350 80 360Z" fill="#1e1e1e"/>
+        <!-- Shirt collar/detail -->
+        <path d="M130 345 L160 390 L190 345" stroke="rgba(0,232,122,0.3)" stroke-width="1.5" fill="none"/>
+        <!-- Neck -->
+        <rect x="143" y="138" width="34" height="30" rx="10" fill="#2a2a2a"/>
+        <!-- Subtle glow -->
+        <ellipse cx="160" cy="90" rx="60" ry="66" fill="rgba(0,232,122,0.04)"/>
+      </svg> -->
+
+
+      <img src="ChatGPT Image Jun 6, 2026, 12_47_44 PM.png" class="hero-silhouette" style="object-fit:cover; object-position:top;">
+
+
+
+
+      <div class="hero-badge">
+        <div class="badge-num">02</div>
+        <div class="badge-txt">Research<br>Published</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div>
+        <div class="stat-val">3+</div>
+        <div class="stat-lbl">Production Projects</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><polyline points="14,2 14,8 20,8"/><path d="M20 12v9a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2h8z"/></svg>
+      </div>
+      <div>
+        <div class="stat-val">01</div>
+        <div class="stat-lbl">Published Paper</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <div>
+        <div class="stat-val">10+</div>
+        <div class="stat-lbl">Technologies</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22,4 12,14.01 9,11.01"/></svg>
+      </div>
+      <div>
+        <div class="stat-val">05</div>
+        <div class="stat-lbl">Certifications</div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div>
+        <div class="stat-val">B.Tech</div>
+        <div class="stat-lbl">Information Technology</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="about-grid">
+    <div class="about-photo-col">
+      <div class="about-photo-frame">
+        <svg class="about-silhouette2" viewBox="0 0 300 420" fill="none">
+          <ellipse cx="150" cy="90" rx="55" ry="62" fill="#2c2c2c"/>
+          <rect x="133" y="145" width="34" height="28" rx="12" fill="#2c2c2c"/>
+          <path d="M55 420 C55 310 85 255 150 238 C215 255 245 310 245 420Z" fill="#262626"/>
+          <path d="M75 290 C40 310 20 360 10 420H290C280 360 260 310 225 290C200 275 180 270 150 270C120 270 100 275 75 290Z" fill="#1f1f1f"/>
+          <path d="M120 242 L150 290 L180 242" stroke="rgba(0,232,122,0.25)" stroke-width="1.5" fill="none"/>
+          <ellipse cx="150" cy="90" rx="65" ry="75" fill="rgba(0,232,122,0.03)"/>
+          
+        </svg>
+        <img src="ChatGPT Image Jun 6, 2026, 12_47_44 PM.png" alt="" width="600px" height="800px">
+        <div class="exp-badge2">
+          B.Tech
+          <span>IT · NIET</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-right">
+      <p class="s-eyebrow">About Me</p>
+      <h2 class="about-heading">Are you looking for an <em>AI-powered</em> full-stack engineer? Let me help you!</h2>
+      <p class="about-body">
+        I'm Dwiz — an Information Technology undergraduate from NIET, Greater Noida. I build systems that actually ship: from real-time WebSocket chatbots with LLM integration to ML-based anomaly detection engines with published research. I work across the full stack, and I bring Agile discipline and cross-functional thinking to every project.
+      </p>
+      <div class="about-checks">
+        <div class="check-item">Production-grade Java &amp; Spring Boot</div>
+        <div class="check-item">LLM API integration &amp; NLP</div>
+        <div class="check-item">Node.js &amp; REST API design</div>
+        <div class="check-item">ML anomaly detection systems</div>
+        <div class="check-item">JWT &amp; WebSocket architecture</div>
+        <div class="check-item">GCP &amp; AWS cloud deployment</div>
+      </div>
+      <a class="btn-green" href="#projects">
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" width="16" height="16"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        More About My Work
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <p class="s-eyebrow">Capabilities</p>
+  <h2 class="s-title">Technical Skills</h2>
+  <p class="s-desc">Building at every layer — from intelligent backends to cloud deployments.</p>
+  <div class="skills-grid">
+    <div class="sk-card">
+      <div class="sk-icon"><svg viewBox="0 0 24 24"><polyline points="16,18 22,12 16,6"/><polyline points="8,6 2,12 8,18"/></svg></div>
+      <p class="sk-title">Languages</p>
+      <div class="sk-tags"><span class="stag">Java</span><span class="stag">Python</span><span class="stag">JavaScript</span><span class="stag">SQL</span><span class="stag">COBOL</span><span class="stag">JCL</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-icon"><svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg></div>
+      <p class="sk-title">Backend &amp; APIs</p>
+      <div class="sk-tags"><span class="stag">Spring Boot</span><span class="stag">Node.js</span><span class="stag">Express.js</span><span class="stag">REST APIs</span><span class="stag">WebSocket</span><span class="stag">JWT</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-icon"><svg viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3M6.343 6.343l-.707-.707M7.5 20.5L12 17l4.5 3.5M12 17V7m0 0a2 2 0 100-4 2 2 0 000 4z"/></svg></div>
+      <p class="sk-title">AI / ML</p>
+      <div class="sk-tags"><span class="stag">TensorFlow</span><span class="stag">PyTorch</span><span class="stag">Scikit-learn</span><span class="stag">Pandas</span><span class="stag">NumPy</span><span class="stag">NLP</span><span class="stag">LLM APIs</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+      <p class="sk-title">Databases &amp; Cloud</p>
+      <div class="sk-tags"><span class="stag">MySQL</span><span class="stag">DB2</span><span class="stag">GCP</span><span class="stag">AWS</span><span class="stag">JSON</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+      <p class="sk-title">CS Fundamentals</p>
+      <div class="sk-tags"><span class="stag">DSA</span><span class="stag">DBMS</span><span class="stag">OOPs</span><span class="stag">Agile</span><span class="stag">Enterprise App Design</span></div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+      <p class="sk-title">Soft Skills</p>
+      <div class="sk-tags"><span class="stag">Analytical thinking</span><span class="stag">Cross-functional</span><span class="stag">Stakeholder comms</span><span class="stag">Adaptability</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <p class="s-eyebrow">Work</p>
+  <h2 class="s-title">Successful Projects</h2>
+  <p class="s-desc">End-to-end systems built for real performance, not just demos.</p>
+  <div class="projects-grid">
+    <div class="proj-card proj-card-featured">
+      <div>
+        <p class="proj-num">01 — Featured</p>
+        <p class="proj-name">Smart Attendance System</p>
+      </div>
+      <p class="proj-desc">Full-stack attendance platform with built-in proxy detection via behavioral anomaly ML. Real-time tracking, JWT-secured APIs, and Agile-tuned ML thresholds to minimize false positives. Backed by peer-reviewed published research accepted in JSIAR — a first-author publication at undergrad level.</p>
+      <div class="proj-tech"><span class="ptag">Node.js</span><span class="ptag">Express.js</span><span class="ptag">MySQL</span><span class="ptag">Machine Learning</span><span class="ptag">JavaScript</span><span class="ptag">JWT</span></div>
+      <div class="proj-bottom">
+        <span class="proj-badge-pub">● Research Published</span>
+        <a class="proj-link" href="https://jsiar.com/JSIAR-M-26-03200.html" target="_blank">Read Paper ↗</a>
+      </div>
+    </div>
+    <div class="proj-card">
+      <p class="proj-num">02</p>
+      <p class="proj-name">AI Customer Support Chatbot</p>
+      <p class="proj-desc">Production-grade Spring Boot app with real-time WebSocket communication and LLM API integration. JWT-secured sessions, concurrent session optimization — architected for true scalability.</p>
+      <div class="proj-tech"><span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">MySQL</span><span class="ptag">WebSocket</span><span class="ptag">JWT</span><span class="ptag">LLM APIs</span></div>
+      <div class="proj-bottom">
+        <span></span>
+        <span class="proj-link">Full-stack · AI</span>
+      </div>
+    </div>
+    <div class="proj-card">
+      <p class="proj-num">03</p>
+      <p class="proj-name">Xyric — Music Streaming</p>
+      <p class="proj-desc">Scalable REST APIs for music playback, playlist management, and user data. Built in a cross-functional Agile team across design and backend with clean API contracts.</p>
+      <div class="proj-tech"><span class="ptag">Node.js</span><span class="ptag">Express.js</span><span class="ptag">REST APIs</span><span class="ptag">JavaScript</span><span class="ptag">HTML/CSS</span></div>
+      <div class="proj-bottom">
+        <span></span>
+        <span class="proj-link">Agile · Team</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+  <p class="s-eyebrow">Background</p>
+  <h2 class="s-title">Experience &amp; Education</h2>
+  <p class="s-desc">The path so far — building, learning, and shipping.</p>
+  <div class="exp-grid">
+    <div>
+      <p style="font-size:13px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;font-family:var(--mono)">Experience</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <p class="tl-date">Mar 2026 – Jun 2026</p>
+          <p class="tl-role">Project-Based AI&ML Internship</p>
+          <p class="tl-org">HCLTech</p>
+          
+          <p class="tl-body">I've gain hands on experience about AI and ML, working on real-world data pipelines and model development using Python, Pandas, NumPy, Scikit-learn, etc.</p>
+          <br>
+          <div>
+          <a href="certificates/Certificate_HCL.pdf"
+           target="_blank"
+           class="cert-btn">
+            📄 View Certificate
+        </a>
+        </div>
+        </div>
+
+        
+        <div class="tl-item">
+          <p class="tl-date">Sep 2025 – Oct 2025</p>
+          <p class="tl-role">Machine Learning Intern</p>
+          <p class="tl-org">Info Bharat Interns (IBI) — Virtual</p>
+          <p class="tl-body">Applied ML techniques in a virtual internship, working on real-world data pipelines and model development using Python, Pandas, and Scikit-learn.</p>
+          <br>
+          <div>
+          <a href="certificates/Dwiz Kumar Shrivastav (1).pdf"
+           target="_blank"
+           class="cert-btn">
+            📄 View Certificate
+        </a>
+        </div>
+       
+      </div>
+    </div>
+    <div>
+      <p style="font-size:13px;font-weight:700;color:#fff;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem;font-family:var(--mono)">Education</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <p class="tl-date">Ongoing</p>
+          <p class="tl-role">B.Tech — Information Technology</p>
+          <p class="tl-org">NIET, Greater Noida</p>
+          <p class="tl-body">DSA · DBMS · OOPs · AI-ML · Web Technologies · Enterprise Application Design</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-date">2021–2022</p>
+          <p class="tl-role">Secondary Education — Class X</p>
+          <p class="tl-org">Vivekananda Vidyapeeth, Shikohabad</p>
+        </div>
+        <div class="tl-item">
+          <p class="tl-date">2019–2020</p>
+          <p class="tl-role">Higher Secondary — Class XII</p>
+          <p class="tl-org">The Asian School, Shikohabad</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- RESEARCH -->
+<section class="section" id="research">
+  <p class="s-eyebrow">Publication</p>
+  <h2 class="s-title">Research</h2>
+  <div class="research-card">
+    <span class="pub-tag">Published · JSIAR · 2026</span>
+    <p class="res-title">A Behavioral Anomaly Detection Framework for Proxy Attendance Identification in Web-Based Systems</p>
+    <p class="res-venue">Journal of Scientific and Industrial Applied Research</p>
+    <p class="res-abstract">Proposes a machine learning framework that analyzes behavioral signals — click patterns, session timing, geolocation inconsistencies — to detect proxy attendance in web-based systems. Threshold tuning in an Agile workflow reduced false positives significantly, making the system viable for real institutional deployment.</p>
+    <a class="btn-green" href="https://jsiar.com/JSIAR-M-26-03200.html" target="_blank" style="font-size:13px;padding:0.65rem 1.4rem">
+      ↗ Read on JSIAR
+    </a>
+  </div>
+
+  <div class="research-card">
+    <span class="pub-tag">Published · IJSREM · 2024</span>
+    <p class="res-title">Product Comparison Website using SEO (web crawling)</p>
+    <p class="res-venue">International Journal of Scientific Research in Engineering and Management</p>
+    <p class="res-abstract">Developed a product comparison website that uses SEO and web crawling techniques to collect product data from multiple e-commerce platforms. The system compares prices, features, and ratings to help users make informed purchasing decisions efficiently..</p>
+    <a class="btn-green" href="https://ijsrem.com/uploads/production/Comparative-Analysis-of-Gadgets-using-Search-Engine-Optimization.pdf" target="_blank" style="font-size:13px;padding:0.65rem 1.4rem">
+      ↗ Read on IJSREM
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CERTS -->
+<section class="section" id="certs">
+  <p class="s-eyebrow">Credentials</p>
+  <h2 class="s-title">Certifications</h2>
+  <div class="certs-grid">
+    <div class="cert-card"><p class="cert-issuer">University of Michigan</p><p class="cert-name">Python Basics</p></div>
+    <div class="cert-card"><p class="cert-issuer">IBM</p><p class="cert-name">Python for Data Science, AI &amp; Development</p></div>
+    <div class="cert-card"><p class="cert-issuer">IBM</p><p class="cert-name">Introduction to Artificial Intelligence</p></div>
+    <div class="cert-card"><p class="cert-issuer">UC San Diego</p><p class="cert-name">OOP in Java</p></div>
+    <div class="cert-card"><p class="cert-issuer">Duke University</p><p class="cert-name">Java: Arrays, Lists &amp; Structured Data</p></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="contact-wrap">
+    <div class="contact-left">
+      <p class="s-eyebrow">Let's Connect</p>
+      <h2 class="s-title">Get in Touch</h2>
+      <p class="s-desc">Open to full-time roles, internships, and interesting project collaborations. Based in Greater Noida, India.</p>
+      <div class="contact-links">
+        <a class="c-link" href="mailto:dwizshrivastav@gmail.com">
+          <div class="c-link-icon">@</div>
+          <div><div class="c-link-val">dwizshrivastav@gmail.com</div><div class="c-link-label">Email</div></div>
+        </a>
+        <a class="c-link" href="tel:+918267836622">
+          <div class="c-link-icon">#</div>
+          <div><div class="c-link-val">+91 82678 36622</div><div class="c-link-label">Phone</div></div>
+        </a>
+        <a class="c-link" href="https://github.com/DwizKumarShrivastav" target="_blank">
+          <div class="c-link-icon">GH</div>
+          <div><div class="c-link-val">GitHub</div><div class="c-link-label">Code &amp; Projects</div></div>
+        </a>
+        <a class="c-link" href="https://www.linkedin.com/in/dwiz-kumar-shrivastav-4a5997357/" target="_blank">
+          <div class="c-link-icon">LI</div>
+          <div><div class="c-link-val">LinkedIn</div><div class="c-link-label">Professional network</div></div>
+        </a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <p style="font-size:13px;font-weight:700;color:#fff;margin-bottom:1.5rem;letter-spacing:0.06em;text-transform:uppercase;font-family:var(--mono)">Send a Message</p>
+      <div class="form-field"><label>Your Name</label><input type="text" placeholder="e.g. Recruiter at Acme Corp"></div>
+      <div class="form-field"><label>Email</label><input type="email" placeholder="you@company.com"></div>
+      <div class="form-field"><label>Message</label><textarea placeholder="Tell me about the opportunity..."></textarea></div>
+      <button class="btn-green" style="width:100%;justify-content:center;border:none;cursor:pointer;font-family:var(--sans)">
+        Send Message
+        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2" width="16" height="16"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22,2 15,22 11,13 2,9"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2026 DWIZ KUMAR SHRIVASTAV · GREATER NOIDA, INDIA</span>
+  <div class="footer-socials">
+    <a class="social-btn" href="https://github.com" target="_blank">GH</a>
+    <a class="social-btn" href="https://linkedin.com" target="_blank">LI</a>
+    <a class="social-btn" href="mailto:dwizshrivastav@gmail.com">@</a>
+  </div>
+</footer>
+
+<script>
+const cur=document.getElementById('cur'),ring=document.getElementById('ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function tick(){rx+=(mx-rx)*.13;ry+=(my-ry)*.13;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(tick)})();
+document.querySelectorAll('a,button,.sk-card,.proj-card,.cert-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(2.5)';ring.style.transform='translate(-50%,-50%) scale(1.5)';ring.style.borderColor='rgba(0,232,122,.7)'});
+  el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)';ring.style.transform='translate(-50%,-50%) scale(1)';ring.style.borderColor='rgba(0,232,122,.4)'});
+});
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.08});
+document.querySelectorAll('.sk-card,.proj-card,.cert-card,.tl-item,.research-card,.about-photo-frame').forEach(el=>{
+  el.style.opacity='0';el.style.transform='translateY(24px)';
+  el.style.transition='opacity .55s ease, transform .55s ease, border-color .2s, background .2s';
+  obs.observe(el);
+});
+
+//  navigation bar 
+
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+
+</script>
+</body>
+</html>
